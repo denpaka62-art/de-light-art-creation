@@ -75,7 +75,7 @@
             font-weight: 700;
             line-height: 1.15;
             letter-spacing: -0.02em;
-            margin-bottom: 1.5rem;
+           /** margin-bottom: 1.5rem;**/
         }
 
         .hero-description {
@@ -160,8 +160,8 @@
     </header>
 </head>
 <body>
-    <section>
-  <h1>Contact Us</h1>
+    <section>class="hero">
+  <h1 class="hero-title">Contact Us</h1>
   
   <form id="contactForm">
     <label for="name">Name:</label><br>
@@ -175,6 +175,7 @@
     
     <button type="submit">Send</button>
   </form>
+</section>
  <script>
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     let name = document.getElementById("name").value.trim();
